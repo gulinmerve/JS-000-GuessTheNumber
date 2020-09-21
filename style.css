@@ -1,0 +1,23 @@
+body {
+  background-image: url("https://www.funbrain.com/assets/img/content-cards/F2qRmLhRnmebc8jJAUjr_GuessTheNumber%403x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin: 10px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+#inputBox,
+#check {
+  padding: 8px;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  /* outline: none; */
+}
+
+#check:hover {
+    background: lightblue;
+}
