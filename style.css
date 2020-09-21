@@ -22,11 +22,3 @@ h1 {
     background: lightblue;
 }
 
-@media (max-width: 768px) {
-  body {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-}
