@@ -13,7 +13,7 @@ h1 {
 #inputBox,
 #check {
   padding: 9px;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 3px solid lightgray;
   /* outline: none; */
 }
