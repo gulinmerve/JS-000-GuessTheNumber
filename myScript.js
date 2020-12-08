@@ -1,6 +1,5 @@
-let guess;
 let count = 0 ;
-let correctNumber = Math.floor((Math.random() * 100) + 1);
+let correctNumber = Math.floor((Math.random() * 20) + 1);
 
 document.getElementById("check").addEventListener("click", checkResult);
 
@@ -9,7 +8,7 @@ function checkResult() {
     count ++;
     document.getElementById("guessNumber").innerHTML = "This is your test number: " + count;
 
-    guess = document.getElementById("inputBox").value;
+    let guess = document.getElementById("inputBox").value;
 
     if (guess == correctNumber) {
         alert("You win :) You find at "+ count + "." + " try");
@@ -31,6 +30,9 @@ function checkResult() {
         }
     }
 
+    else if (isNaN(guess)) {
+        document.getElementById("result").innerHTML = "Are you sure that this is a number?";
+    }
     else if (guess < correctNumber) {
         document.getElementById("result").innerHTML = "I am thinking about higher number";
     }
@@ -42,3 +44,5 @@ function checkResult() {
 document.getElementById("inputBox").value='';
 document.getElementById("inputBox").focus();
 }
+
+
